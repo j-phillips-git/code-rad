@@ -1,0 +1,132 @@
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-font-base: #666;
+  --clr-font-dark: #212529;
+  --clr-font-light: #b0aebe;
+  --clr-font-link: #57a6ff;
+  --clr-footer: #34314b;
+  --clr-footer-base: #2e2b45;
+  --clr-contrast: rgba(246, 248, 249, 0.8);
+  --clr-success: #64ecf5;
+  --clr-danger: #ff8b8d;
+  --clr-grad-1: #a1ecff;
+  --clr-grad-2: #7dbcff;
+
+  --size-10: 0.625rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--size-14);
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--clr-font-base);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--clr-font-dark);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--size-20);
+  padding: 0.375rem 0.75rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, var(--clr-grad-1) 0%, var(--clr-grad-2) 100%);
+  border: 1px solid var(--clr-grad-1);
+  box-shadow: 0 10px 20px rgba(161, 236, 255, 0.5);
+  transition: ease-in-out 0.3s;
+  color: var(--clr-white);
+  padding: 0.4375rem 1.5625rem;
+}
+
+.btn-white {
+  background-color: var(--clr-white);
+  color: var(--clr-font-link);
+  padding: 0.475rem 1.75rem;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 768px) {
+  .pricing-table,
+  .testimonial-grid,
+  .footer-bottom-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
